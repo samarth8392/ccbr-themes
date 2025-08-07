@@ -26,7 +26,7 @@ format:
     toc-title: "Table of Contents"
     page-layout: full
     theme: default
-    css: "https://cdn.jsdelivr.net/gh/samarth8392/ccbr-themes@main/_template/html_post_styles.css" 
+    css: "/Users/mathurs2/Documents/GitHub/ccbr-themes/_template/html_post_styles.css" 
     grid:
       margin-width: 250px
 params:
@@ -76,63 +76,197 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 [pastel](link-url){.btn-outline-pastel}
 [mint](link-url){.btn-outline-mint}
 
-# Your content starts here
+# Data Visualization Examples
+
+::: {.panel-tabset .theme-ccbr-poppy}
+
+## Scatter Plot
+
+```{r}
+# Generate random data
+set.seed(123)
+x <- runif(10, 0, 10)
+y <- runif(10, 0, 10)
+
+# Create scatter plot
+plot(x, y, 
+     pch = 16, 
+     col = "#4e9db5", 
+     cex = 1.5,
+     main = "Random Scatter Plot",
+     xlab = "X values", 
+     ylab = "Y values")
+```
+
+## Bar Plot
+
+```{r}
+# Sample data
+categories <- c("A", "B", "C", "D", "E")
+values <- c(23, 17, 35, 29, 12)
+
+# Create bar plot
+barplot(values, 
+        names.arg = categories,
+        col = "#7cc349",
+        main = "Category Comparison",
+        xlab = "Categories", 
+        ylab = "Values",
+        border = "#528230")
+```
+
+## Pie Chart
+
+```{r}
+# Data for pie chart
+labels <- c("Research", "Analysis", "Writing", "Review")
+sizes <- c(35, 25, 25, 15)
+colors <- c("#4e9db5", "#7cc349", "#ecba4c", "#296b7f")
+
+# Create pie chart
+pie(sizes, 
+    labels = labels, 
+    col = colors,
+    main = "Project Time Distribution")
+```
+
+:::
+
+## Different Base R Styles
+
+::: {.panel-tabset .theme-ccbr-scientific}
+
+## Enhanced Scatter
+
+```{r}
+# Random data with grid
+set.seed(789)
+x <- runif(10, 1, 8)
+y <- runif(10, 2, 9)
+
+# Enhanced scatter plot
+plot(x, y, 
+     pch = 19, 
+     col = "#296b7f", 
+     cex = 2,
+     main = "Enhanced Scatter Plot",
+     xlab = "X values", 
+     ylab = "Y values",
+     xlim = c(0, 10),
+     ylim = c(0, 10))
+grid(col = "gray", lty = "dotted")
+```
+
+## Horizontal Bar
+
+```{r}
+# Data for horizontal bars
+items <- c("Item A", "Item B", "Item C", "Item D")
+counts <- c(15, 28, 22, 19)
+
+# Horizontal barplot
+barplot(counts, 
+        names.arg = items,
+        horiz = TRUE,
+        col = "#7cc349",
+        main = "Horizontal Bar Chart",
+        xlab = "Count",
+        border = "#528230")
+```
+
+## Donut-style Pie
+
+```{r}
+# Simple data
+activity <- c("Coding", "Testing", "Documentation", "Meetings")
+time <- c(40, 20, 25, 15)
+colors <- c("#4e9db5", "#7cc349", "#ecba4c", "#19424e")
+
+# Create pie chart
+pie(time, 
+    labels = paste(activity, "(", time, "%)", sep = ""), 
+    col = colors,
+    main = "Time Allocation",
+    clockwise = TRUE)
+```
+
+:::
+
+## More Base R Variations
+
+::: {.panel-tabset .theme-ccbr-gradient}
+
+## Line + Points
+
+```{r}
+# Time series style data
+set.seed(999)
+time <- 1:10
+values <- cumsum(rnorm(10, 0.5, 1))
+
+# Line plot with points
+plot(time, values, 
+     type = "b",
+     pch = 16,
+     col = "#296b7f",
+     lwd = 2,
+     main = "Trend Over Time",
+     xlab = "Time Point",
+     ylab = "Cumulative Value")
+```
+
+## Stacked Bar
+
+```{r}
+# Matrix for stacked bars
+data_matrix <- matrix(c(12, 8, 15, 
+                       18, 12, 10, 
+                       10, 15, 20), 
+                     nrow = 3, byrow = TRUE)
+colnames(data_matrix) <- c("Group A", "Group B", "Group C")
+rownames(data_matrix) <- c("Category 1", "Category 2", "Category 3")
+
+# Stacked barplot
+barplot(data_matrix, 
+        col = c("#4e9db5", "#7cc349", "#ecba4c"),
+        main = "Stacked Bar Chart",
+        xlab = "Groups",
+        ylab = "Values",
+        legend.text = TRUE)
+```
+
+## Multi Pie
+
+```{r}
+# Split plotting area for multiple pies
+par(mfrow = c(1, 2))
+
+# First pie
+pie1 <- c(30, 70)
+pie(pie1, 
+    labels = c("Yes", "No"), 
+    col = c("#7cc349", "#ecba4c"),
+    main = "Survey A")
+
+# Second pie  
+pie2 <- c(45, 55)
+pie(pie2, 
+    labels = c("Pass", "Fail"), 
+    col = c("#4e9db5", "#296b7f"),
+    main = "Survey B")
+
+# Reset to single plot
+par(mfrow = c(1, 1))
+```
+
+:::
+
 
 ::: {style="text-align: center; margin: 2em 0;"}
 [Back to Top](#header-1){.btn-outline-light}
 :::
 
-::: {.panel-tabset .theme-ccbr-poppy}
 
-## Tab 1
-Content for the first tab goes here.
-
-## Tab 2
-Content for the second tab goes here.
-
-## Tab 3
-Content for the third tab goes here.
-
-:::
-
-::: {.panel-tabset .theme-ccbr-subtle}
-
-## Tab 1
-Content for the first tab goes here.
-
-## Tab 2
-Content for the second tab goes here.
-
-## Tab 3
-Content for the third tab goes here.
-
-:::
-
-::: {.panel-tabset .theme-ccbr-scientific}
-
-## Tab 1
-Content for the first tab goes here.
-
-:::
-
-::: {.panel-tabset .theme-ccbr-neon}
-
-## Tab 1
-Content for the first tab goes here.
-
-## Tab 2
-Content for the second tab goes here.
-
-:::
-
-::: {.panel-tabset .theme-ccbr-gradient}
-
-## Tab 1
-Content for the first tab goes here.
-
-## Tab 2
-Content for the second tab goes here.
-:::
 
 ::: {.ccbr-footer}
 <div class="ccbr-footer-content">
