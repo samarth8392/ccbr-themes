@@ -7,7 +7,7 @@
 .quarto-title-banner {
   background: 
     linear-gradient(135deg, rgba(25, 66, 78, 0.9) 0%, rgba(41, 107, 127, 0.8) 50%, rgba(78, 157, 181, 0.7) 100%),
-    url('/Users/mathurs2/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/ccbr-themes/_template/background.png') center/cover !important;
+    url('https://github.com/samarth8392/ccbr-themes/blob/main/_template/background.png?raw=true') center/cover !important;
   color: var(--white) !important;
   border-bottom: 3px solid var(--lime) !important;
   padding: 3rem 0 !important;

@@ -26,7 +26,7 @@ format:
     toc-title: "Table of Contents"
     page-layout: full
     theme: default
-    css: "/Users/mathurs2/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/ccbr-themes/_template/html_post_styles.css" 
+    css: "https://raw.githubusercontent.com/samarth8392/ccbr-themes/refs/heads/main/_template/html_post_styles.css" 
     grid:
       margin-width: 250px
 params:
