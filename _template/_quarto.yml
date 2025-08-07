@@ -1,0 +1,16 @@
+project:
+  type: default
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    df-print: paged
+    code-fold: true
+    code-tools: true
+    code-line-numbers: true
+    embed-resources: true
+    toc: true
+    toc-depth: 4
+    toc-location: body
+    page-layout: full

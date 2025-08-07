@@ -1,0 +1,95 @@
+---
+title: "CCBR XXXX: Your project Title"
+title-block-banner: true
+subtitle: "This is the subtitle"
+author:
+  - name: Samarth Mathur
+    orcid: 0000-0002-6446-5718
+    email: samarth.mathur@nih.gov
+    url: https://github.com/samarth8392
+    affiliations: 
+      - name: "CCR Collaborative Bioinformatics Resource, Office of Science and Technology Resources, National Cancer Institute, National Institutes of Health, Bethesda, MD, USA"
+        url: https://bioinformatics.ccr.cancer.gov/ccbr/
+      - name: "Advanced Biomedical Computational Science, Frederick National Laboratory for Cancer Research, Frederick, MD 21702, USA"
+        url: https://frederick.cancer.gov/research-technology/science-areas/bioinformatics-and-computational-science/advanced-biomedical-computational-science
+date: today
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    code-line-numbers: true
+    embed-resources: true
+    toc: true
+    df-print: paged
+    toc-depth: 4
+    toc-location: body
+    toc-title: "Table of Contents"
+    page-layout: full
+    theme: default
+    css: "/Users/mathurs2/Library/CloudStorage/OneDrive-NationalInstitutesofHealth/ccbr-themes/_template/html_post_styles.css" 
+    grid:
+      margin-width: 250px
+params:
+  workdir: ""
+  outdir: ""
+  resources: ""
+---
+
+```{r echo=FALSE, results='asis'}
+cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d-%Y"), '</span>')
+```
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+
+[Download Report](link-url){.btn-primary}
+[View Results](link-url){.btn-primary}
+
+[GitHub Repository](link-url){.btn-secondary}
+[Documentation](link-url){.btn-secondary}
+
+
+[Important Link](link-url){.btn-accent}
+[Get Started](link-url){.btn-accent}
+
+[Learn More](link-url){.btn-outline-primary}
+[Contact Us](link-url){.btn-outline-secondary}
+
+[Quick Link](link-url){.btn-pill}
+[Tag Style](link-url){.btn-pill}
+
+[🔗](link-url){.btn-icon}
+[📊](link-url){.btn-icon}
+[📁](link-url){.btn-icon}
+
+::: {.btn-group}
+[Primary Action](link1){.btn-primary}
+[Secondary Action](link2){.btn-outline-primary}
+[More Info](link3){.btn-pill}
+:::
+
+[primary](link-url){.btn-outline-primary}
+[light](link-url){.btn-outline-light}
+[soft](link-url){.btn-outline-soft}
+[pastel](link-url){.btn-outline-pastel}
+[mint](link-url){.btn-outline-mint}
+
+# Your content starts here
+
+::: {style="text-align: center; margin: 2em 0;"}
+[Back to Top](#header-1){.btn-outline-light}
+:::
+
+
+::: {.ccbr-footer}
+<div class="ccbr-footer-content">
+  Created by Samarth Mathur
+</div>
+<div class="footer-badges">
+  <a href="mailto:samarth.mathur@nih.gov" class="email-badge">Email Me</a>
+  <a href="https://github.com/samarth8392" class="github-badge">My Github</a>
+  <a href="https://github.com/CCBR" class="ccbr-badge">CCBR Team</a>
+</div>
+:::
