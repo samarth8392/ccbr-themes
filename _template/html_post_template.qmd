@@ -26,7 +26,7 @@ format:
     toc-title: "Table of Contents"
     page-layout: full
     theme: default
-    css: "https://raw.githubusercontent.com/samarth8392/ccbr-themes/refs/heads/main/_template/html_post_styles.css" 
+    css: "https://cdn.jsdelivr.net/gh/samarth8392/ccbr-themes@main/_template/html_post_styles.css" 
     grid:
       margin-width: 250px
 params:
@@ -82,6 +82,52 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 [Back to Top](#header-1){.btn-outline-light}
 :::
 
+::: {.panel-tabset .theme-ccbr-poppy}
+
+## Tab 1
+Content for the first tab goes here.
+
+## Tab 2
+Content for the second tab goes here.
+
+## Tab 3
+Content for the third tab goes here.
+
+:::
+
+::: {.panel-tabset .theme-ccbr-subtle}
+
+## Tab 1
+Content for the first tab goes here.
+
+## Tab 2
+Content for the second tab goes here.
+
+## Tab 3
+Content for the third tab goes here.
+
+:::
+
+::: {.panel-tabset .theme-ccbr-scientific}
+
+## Tab 1
+Content for the first tab goes here.
+
+:::
+
+::: {.panel-tabset .theme-ccbr-neon}
+
+## Tab 1
+Content for the first tab goes here.
+
+:::
+
+::: {.panel-tabset .theme-ccbr-gradient}
+
+## Tab 1
+Content for the first tab goes here.
+
+:::
 
 ::: {.ccbr-footer}
 <div class="ccbr-footer-content">
