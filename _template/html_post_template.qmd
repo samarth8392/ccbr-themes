@@ -26,7 +26,7 @@ format:
     toc-title: "Table of Contents"
     page-layout: full
     theme: default
-    css: "/Users/mathurs2/Documents/GitHub/ccbr-themes/_template/html_post_styles.css" 
+    css: "https://cdn.jsdelivr.net/gh/samarth8392/ccbr-themes@main/_template/html_post_styles.css"
     grid:
       margin-width: 250px
 params:
