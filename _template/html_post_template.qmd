@@ -120,6 +120,9 @@ Content for the first tab goes here.
 ## Tab 1
 Content for the first tab goes here.
 
+## Tab 2
+Content for the second tab goes here.
+
 :::
 
 ::: {.panel-tabset .theme-ccbr-gradient}
@@ -127,11 +130,13 @@ Content for the first tab goes here.
 ## Tab 1
 Content for the first tab goes here.
 
+## Tab 2
+Content for the second tab goes here.
 :::
 
 ::: {.ccbr-footer}
 <div class="ccbr-footer-content">
-  Created by Samarth Mathur
+  Created by Samarth Mathur, PhD
 </div>
 <div class="footer-badges">
   <a href="mailto:samarth.mathur@nih.gov" class="email-badge">Email Me</a>
