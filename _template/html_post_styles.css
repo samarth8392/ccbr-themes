@@ -1222,6 +1222,500 @@ blockquote {
 }
 
 /* =====================================
+   CCBR KABLEEXTRA TABLE THEMES
+   Enhanced styling for kbl() tables
+   ===================================== */
+
+/* =====================================
+   THEME 1: CCBR CLASSIC TABLE
+   Professional striped table
+   ===================================== */
+.table-ccbr-classic {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(78, 157, 181, 0.15);
+}
+
+.table-ccbr-classic thead {
+    background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+    color: var(--white);
+}
+
+.table-ccbr-classic thead th {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.table-ccbr-classic tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(78, 157, 181, 0.1);
+}
+
+.table-ccbr-classic tbody tr:nth-child(even) {
+    background-color: rgba(78, 157, 181, 0.03);
+}
+
+.table-ccbr-classic tbody tr:hover {
+    background-color: rgba(124, 195, 73, 0.08);
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(78, 157, 181, 0.1);
+}
+
+.table-ccbr-classic tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--teal-dark);
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.table-ccbr-classic tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* =====================================
+   THEME 2: CCBR BORDERED
+   Clean bordered table with accent
+   ===================================== */
+.table-ccbr-bordered {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid var(--teal-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(78, 157, 181, 0.2);
+}
+
+.table-ccbr-bordered thead {
+    background: linear-gradient(135deg, var(--lime) 0%, var(--lime-light) 100%);
+}
+
+.table-ccbr-bordered thead th {
+    padding: 1rem 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid var(--orange);
+    color: var(--teal-dark);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.table-ccbr-bordered tbody tr {
+    border-bottom: 1px solid rgba(78, 157, 181, 0.2);
+    transition: all 0.3s ease;
+}
+
+.table-ccbr-bordered tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--teal-dark);
+    border-right: 1px solid rgba(78, 157, 181, 0.1);
+    font-family: "Roboto", sans-serif;
+}
+
+.table-ccbr-bordered tbody td:last-child {
+    border-right: none;
+}
+
+.table-ccbr-bordered tbody tr:hover {
+    background: linear-gradient(135deg, rgba(177, 238, 133, 0.1) 0%, rgba(124, 195, 73, 0.05) 100%);
+}
+
+.table-ccbr-bordered tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* =====================================
+   THEME 3: CCBR MINIMAL
+   Ultra-clean minimal design
+   ===================================== */
+.table-ccbr-minimal {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+.table-ccbr-minimal thead {
+    border-bottom: 3px solid var(--lime);
+}
+
+.table-ccbr-minimal thead th {
+    padding: 0.875rem 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--teal-dark);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background: transparent;
+}
+
+.table-ccbr-minimal tbody tr {
+    border-bottom: 1px solid rgba(78, 157, 181, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.table-ccbr-minimal tbody td {
+    padding: 0.75rem 1rem;
+    color: var(--teal-dark);
+    font-family: "Roboto", sans-serif;
+}
+
+.table-ccbr-minimal tbody tr:hover {
+    background-color: rgba(78, 157, 181, 0.04);
+}
+
+.table-ccbr-minimal tbody tr:last-child {
+    border-bottom: 2px solid var(--teal-light);
+}
+
+/* =====================================
+   THEME 4: CCBR GRADIENT HEADER
+   Eye-catching gradient header
+   ===================================== */
+.table-ccbr-gradient {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(78, 157, 181, 0.2);
+}
+
+.table-ccbr-gradient thead {
+    background: linear-gradient(135deg, var(--teal-light) 0%, var(--lime) 100%);
+    position: relative;
+}
+
+.table-ccbr-gradient thead::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
+    pointer-events: none;
+}
+
+.table-ccbr-gradient thead th {
+    padding: 1.125rem 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    color: var(--white);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+}
+
+.table-ccbr-gradient tbody tr {
+    border-bottom: 1px solid rgba(78, 157, 181, 0.1);
+    transition: all 0.3s ease;
+}
+
+.table-ccbr-gradient tbody tr:nth-child(odd) {
+    background-color: rgba(78, 157, 181, 0.02);
+}
+
+.table-ccbr-gradient tbody tr:hover {
+    background: linear-gradient(135deg, rgba(124, 195, 73, 0.1) 0%, rgba(78, 157, 181, 0.05) 100%);
+    transform: translateX(3px);
+}
+
+.table-ccbr-gradient tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--teal-dark);
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+/* =====================================
+   THEME 5: CCBR CARD
+   Modern card-style table
+   ===================================== */
+.table-ccbr-card {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.table-ccbr-card thead {
+    background: transparent;
+}
+
+.table-ccbr-card thead th {
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--teal);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+.table-ccbr-card tbody tr {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(78, 157, 181, 0.1);
+    transition: all 0.3s ease;
+}
+
+.table-ccbr-card tbody tr:hover {
+    box-shadow: 0 4px 20px rgba(124, 195, 73, 0.2);
+    transform: translateY(-2px);
+}
+
+.table-ccbr-card tbody td {
+    padding: 1rem 1.25rem;
+    color: var(--teal-dark);
+    border: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.table-ccbr-card tbody td:first-child {
+    border-radius: 8px 0 0 8px;
+    border-left: 4px solid var(--lime);
+}
+
+.table-ccbr-card tbody td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* =====================================
+   THEME 6: CCBR HIGHLIGHT
+   Column highlighting on hover
+   ===================================== */
+.table-ccbr-highlight {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(78, 157, 181, 0.15);
+}
+
+.table-ccbr-highlight thead {
+    background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%);
+}
+
+.table-ccbr-highlight thead th {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white);
+    border: none;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.table-ccbr-highlight thead th:hover {
+    background: rgba(124, 195, 73, 0.2);
+}
+
+.table-ccbr-highlight tbody td {
+    padding: 0.875rem 1.25rem;
+    color: var(--teal-dark);
+    border-bottom: 1px solid rgba(78, 157, 181, 0.1);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.table-ccbr-highlight tbody tr:hover td {
+    background-color: rgba(124, 195, 73, 0.05);
+}
+
+/* Column hover effect - requires custom data-column attribute */
+.table-ccbr-highlight td[data-column]:hover {
+    background-color: rgba(124, 195, 73, 0.15) !important;
+}
+
+/* =====================================
+   UTILITY CLASSES FOR KBL TABLES
+   ===================================== */
+
+/* Centered text */
+.table-center {
+    text-align: center !important;
+}
+
+/* Right-aligned numbers */
+.table-right {
+    text-align: right !important;
+}
+
+/* Highlight specific cells */
+.cell-highlight {
+    background: linear-gradient(135deg, rgba(124, 195, 73, 0.2) 0%, rgba(124, 195, 73, 0.1) 100%) !important;
+    font-weight: 600;
+    color: var(--lime-dark) !important;
+}
+
+/* Warning cells */
+.cell-warning {
+    background: linear-gradient(135deg, rgba(236, 186, 76, 0.2) 0%, rgba(236, 186, 76, 0.1) 100%) !important;
+    color: #b8860b !important;
+}
+
+/* Success cells */
+.cell-success {
+    background: linear-gradient(135deg, rgba(124, 195, 73, 0.2) 0%, rgba(124, 195, 73, 0.1) 100%) !important;
+    color: var(--lime-dark) !important;
+}
+
+/* Danger cells */
+.cell-danger {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.2) 0%, rgba(220, 53, 69, 0.1) 100%) !important;
+    color: #c82333 !important;
+}
+
+/* Bold column */
+.col-bold {
+    font-weight: 600 !important;
+}
+
+/* Monospace for data */
+.col-mono {
+    font-family: "Roboto Mono", monospace !important;
+    font-size: 0.9em;
+}
+
+/* Compact table */
+.table-compact td,
+.table-compact th {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9em;
+}
+
+/* Spacious table */
+.table-spacious td,
+.table-spacious th {
+    padding: 1.25rem 1.5rem !important;
+}
+
+/* Responsive table wrapper */
+.table-responsive-ccbr {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(78, 157, 181, 0.1);
+}
+
+/* =====================================
+   CAPTION STYLING
+   ===================================== */
+.table-ccbr-classic caption,
+.table-ccbr-bordered caption,
+.table-ccbr-minimal caption,
+.table-ccbr-gradient caption,
+.table-ccbr-card caption,
+.table-ccbr-highlight caption {
+    padding: 0.75rem 1rem;
+    color: var(--teal-dark);
+    font-weight: 600;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    caption-side: top;
+    background: linear-gradient(135deg, rgba(78, 157, 181, 0.05) 0%, rgba(124, 195, 73, 0.05) 100%);
+    border-radius: 8px 8px 0 0;
+    font-size: 1.1em;
+}
+
+/* =====================================
+   FOOTER ROW STYLING
+   ===================================== */
+.table-footer-row {
+    background: linear-gradient(135deg, rgba(78, 157, 181, 0.1) 0%, rgba(124, 195, 73, 0.05) 100%);
+    font-weight: 600;
+    border-top: 2px solid var(--lime) !important;
+}
+
+/* =====================================
+   USAGE IN R
+   ===================================== 
+
+# Basic usage with kableExtra:
+library(kableExtra)
+
+# Theme 1: Classic
+df %>%
+  kbl() %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(1, bold = TRUE) %>%
+  add_class("table-ccbr-classic")
+
+# Theme 2: Bordered
+df %>%
+  kbl(caption = "My Table Title") %>%
+  kable_styling() %>%
+  add_class("table-ccbr-bordered")
+
+# Theme 3: Minimal
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-minimal")
+
+# Theme 4: Gradient Header
+df %>%
+  kbl(caption = "Results Summary") %>%
+  kable_styling() %>%
+  add_class("table-ccbr-gradient")
+
+# Theme 5: Card Style
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-card")
+
+# Theme 6: Highlight
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-highlight")
+
+# With utility classes:
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-gradient table-compact") %>%
+  column_spec(1, bold = TRUE, extra_css = "text-align: center;") %>%
+  row_spec(0, extra_css = "text-transform: uppercase;")
+
+# Highlight specific cells:
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-classic") %>%
+  column_spec(2, extra_css = "background: rgba(124, 195, 73, 0.1);")
+
+# Responsive wrapper:
+df %>%
+  kbl() %>%
+  kable_styling() %>%
+  add_class("table-ccbr-bordered") %>%
+  scroll_box(width = "100%")
+
+   ===================================== */
+
+/* =====================================
    USAGE INSTRUCTIONS
    ===================================== 
 
