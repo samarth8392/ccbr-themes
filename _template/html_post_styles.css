@@ -1648,132 +1648,94 @@ blockquote {
 }
 
 /* =====================================
-   USAGE IN R
+   USAGE IN R - CORRECT METHODS
    ===================================== 
 
-# Basic usage with kableExtra:
 library(kableExtra)
+
+# METHOD 1: Using table_attr in kbl() (RECOMMENDED)
+# ------------------------------------------------
 
 # Theme 1: Classic
 df %>%
-  kbl() %>%
-  kable_styling(full_width = FALSE) %>%
-  column_spec(1, bold = TRUE) %>%
-  add_class("table-ccbr-classic")
+  kbl(table.attr = "class='table-ccbr-classic'") %>%
+  kable_styling(full_width = FALSE)
 
 # Theme 2: Bordered
 df %>%
-  kbl(caption = "My Table Title") %>%
-  kable_styling() %>%
-  add_class("table-ccbr-bordered")
+  kbl(caption = "My Table Title", 
+      table.attr = "class='table-ccbr-bordered'") %>%
+  kable_styling()
 
 # Theme 3: Minimal
 df %>%
-  kbl() %>%
-  kable_styling() %>%
-  add_class("table-ccbr-minimal")
+  kbl(table.attr = "class='table-ccbr-minimal'") %>%
+  kable_styling()
 
 # Theme 4: Gradient Header
 df %>%
-  kbl(caption = "Results Summary") %>%
-  kable_styling() %>%
-  add_class("table-ccbr-gradient")
+  kbl(caption = "Results Summary",
+      table.attr = "class='table-ccbr-gradient'") %>%
+  kable_styling()
 
 # Theme 5: Card Style
 df %>%
-  kbl() %>%
-  kable_styling() %>%
-  add_class("table-ccbr-card")
+  kbl(table.attr = "class='table-ccbr-card'") %>%
+  kable_styling()
 
 # Theme 6: Highlight
 df %>%
-  kbl() %>%
-  kable_styling() %>%
-  add_class("table-ccbr-highlight")
+  kbl(table.attr = "class='table-ccbr-highlight'") %>%
+  kable_styling()
 
-# With utility classes:
+# METHOD 2: Multiple classes (table + utility)
+# --------------------------------------------
+df %>%
+  kbl(table.attr = "class='table-ccbr-gradient table-compact'") %>%
+  kable_styling() %>%
+  column_spec(1, bold = TRUE)
+
+# METHOD 3: Using kable_styling() htmltable_class
+# -----------------------------------------------
 df %>%
   kbl() %>%
+  kable_styling(htmltable_class = "table-ccbr-classic")
+
+# With additional customization:
+df %>%
+  kbl(table.attr = "class='table-ccbr-bordered'") %>%
   kable_styling() %>%
-  add_class("table-ccbr-gradient table-compact") %>%
   column_spec(1, bold = TRUE, extra_css = "text-align: center;") %>%
-  row_spec(0, extra_css = "text-transform: uppercase;")
-
-# Highlight specific cells:
-df %>%
-  kbl() %>%
-  kable_styling() %>%
-  add_class("table-ccbr-classic") %>%
   column_spec(2, extra_css = "background: rgba(124, 195, 73, 0.1);")
+
+# METHOD 4: Complete example with all features
+# --------------------------------------------
+mtcars %>%
+  head(10) %>%
+  kbl(caption = "Motor Trend Car Road Tests",
+      table.attr = "class='table-ccbr-gradient table-compact'") %>%
+  kable_styling(full_width = FALSE, position = "center") %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(0, extra_css = "text-transform: uppercase;") %>%
+  footnote(general = "Source: 1974 Motor Trend US magazine")
+
+# Highlighting specific rows:
+df %>%
+  kbl(table.attr = "class='table-ccbr-classic'") %>%
+  kable_styling() %>%
+  row_spec(3, background = "rgba(124, 195, 73, 0.15)", 
+           color = "#528230", bold = TRUE)
 
 # Responsive wrapper:
 df %>%
-  kbl() %>%
+  kbl(table.attr = "class='table-ccbr-bordered'") %>%
   kable_styling() %>%
-  add_class("table-ccbr-bordered") %>%
-  scroll_box(width = "100%")
+  scroll_box(width = "100%", height = "400px")
 
-   ===================================== */
-
-/* =====================================
-   USAGE INSTRUCTIONS
-   ===================================== 
-
-To use these themes, add the theme class to your tabset:
-
-## Subtle Professional Theme:
-::: {.panel-tabset .theme-ccbr-subtle}
-
-## Tab 1
-Content here
-
-## Tab 2  
-More content
-
-:::
-
-## Poppy Fun Theme:
-::: {.panel-tabset .theme-ccbr-poppy}
-
-## Tab 1
-Content here
-
-## Tab 2
-More content  
-
-:::
-
-## Clean Scientific Theme:
-::: {.panel-tabset .theme-ccbr-scientific}
-
-## Tab 1
-Content here
-
-## Tab 2
-More content
-
-:::
-
-## Modern Gradient Theme:
-::: {.panel-tabset .theme-ccbr-gradient}
-
-## Tab 1
-Content here
-
-## Tab 2
-More content
-
-:::
-
-## Ultra Poppy Neon Theme:
-::: {.panel-tabset .theme-ccbr-neon}
-
-## Tab 1
-Content here
-
-## Tab 2  
-More content
-
-:::
+# For scrollable tables with fixed header:
+df %>%
+  kbl(table.attr = "class='table-ccbr-gradient'") %>%
+  kable_styling(fixed_thead = TRUE) %>%
+  scroll_box(height = "400px")
 
    ===================================== */
