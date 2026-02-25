@@ -5,7 +5,7 @@ version: 1.0.0
 quarto-required: ">=1.2.0"
 contributes:
   formats:
-    html:
+    ccbr-html: 
       theme: default
       template: html_post_template.html
       css:
