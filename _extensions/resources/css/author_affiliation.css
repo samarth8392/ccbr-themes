@@ -1,0 +1,92 @@
+/* Author and Affiliation Styling - Targets actual Quarto HTML structure */
+
+/* Container for affiliations - initialize counter */
+.quarto-title-meta-author .quarto-title-meta-contents:has(p.affiliation) {
+  counter-reset: affiliation;
+  margin-top: 1em !important;
+}
+
+/* Individual affiliation paragraphs */
+p.affiliation {
+  margin-bottom: 1em !important;
+  padding-left: 2.5em !important;
+  position: relative;
+  line-height: 1.8 !important;
+  display: block !important;
+}
+
+/* Add numbers before each affiliation */
+p.affiliation::before {
+  counter-increment: affiliation;
+  content: counter(affiliation) ". ";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: #444;
+  font-size: 1em;
+}
+
+/* Affiliation link styling */
+p.affiliation a {
+  color: #333 !important;
+  text-decoration: none;
+  line-height: 1.7 !important;
+}
+
+p.affiliation a:hover {
+  text-decoration: underline;
+  color: #0066cc !important;
+}
+
+/* Spacing between Author and Affiliations headings */
+.quarto-title-meta-author .quarto-title-meta-heading {
+  margin-top: 0 !important;
+  margin-bottom: 0.7em !important;
+  font-weight: 600 !important;
+  font-size: 0.9em !important;
+  letter-spacing: 0.5px !important;
+  color: #666 !important;
+  text-transform: uppercase;
+}
+
+/* Ensure both headings align at same height */
+.quarto-title-meta-author {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+  column-gap: 3em !important;
+  align-items: start !important;
+  margin-bottom: 1em !important;
+  padding-bottom: 1em !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Author paragraph spacing */
+p.author {
+  margin-bottom: 0.5em !important;
+  margin-top: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* Published section spacing - reduce margins */
+.quarto-title-meta {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.quarto-title-meta > div {
+  margin-bottom: 0.5em !important;
+  margin-top: 0.5em !important;
+}
+
+.quarto-title-meta-heading {
+  margin-bottom: 0.3em !important;
+}
+
+.quarto-title-meta-contents {
+  margin-top: 0 !important;
+}
+
+/* Add some breathing room to the entire title block */
+.quarto-title-block {
+  margin-bottom: 2em !important;
+}

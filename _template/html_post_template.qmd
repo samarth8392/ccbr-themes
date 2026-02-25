@@ -26,7 +26,11 @@ format:
     toc-title: "Table of Contents"
     page-layout: full
     theme: default
-    css: "https://cdn.jsdelivr.net/gh/samarth8392/ccbr-themes@main/_template/html_post_styles.css"
+    css: 
+      - "resources/css/html_post_styles.css"
+      - "resources/css/author_affiliation.css"
+      - "resources/css/buttons.css"
+      - "resources/fontawesome/css/all.min.css"
     grid:
       margin-width: 250px
 params:
@@ -46,7 +50,37 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 
 ---
 
-# Buttons
+# Specialized buttons
+
+<!-- Filled Buttons -->
+[View Repository](https://github.com/user/repo){.btn-github}
+[OneDrive Folder](https://onedrive.com/folder){.btn-onedrive}
+[Google Drive](https://drive.google.com/folder){.btn-gdrive}
+[Dropbox Files](https://dropbox.com/folder){.btn-dropbox}
+[LinkedIn Profile](https://linkedin.com/in/user){.btn-linkedin}
+[Follow on X](https://twitter.com/user){.btn-twitter}
+[Join Slack](https://slack.com/invite){.btn-slack}
+[Discord Server](https://discord.gg/invite){.btn-discord}
+[YouTube Channel](https://youtube.com/@channel){.btn-youtube}
+[Email Us](mailto:user@email.com){.btn-email}
+[Documentation](https://docs.example.com){.btn-docs}
+[Download File](files/data.zip){.btn-download}
+[Download PDF](files/document.pdf){.btn-pdf}
+
+[GitHub (Outline)](https://github.com/user/repo){.btn-outline-github}
+[OneDrive (Outline)](https://onedrive.com/folder){.btn-outline-onedrive}
+
+
+<!-- Button Groups (multiple buttons together) -->
+::: {.btn-group}
+[GitHub](https://github.com){.btn-github}
+[Docs](https://docs.com){.btn-docs}
+[Download](files/data.zip){.btn-download}
+:::
+
+
+# Regular Buttons
+
 
 [Download Report](link-url){.btn-primary}
 [View Results](link-url){.btn-primary}
@@ -265,7 +299,7 @@ pie(pie2,
 #### Back to Top button
 
 ::: {style="text-align: center; margin: 2em 0;"}
-[Back to Top](#header-1){.btn-outline-light}
+[Back to Top](#){.btn-outline-light}
 :::
 
 #### Footer

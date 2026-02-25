@@ -1,0 +1,52 @@
+/* =====================================
+   CCBR REFERENCES/BIBLIOGRAPHY STYLING
+   ===================================== */
+
+/* Individual reference entries */
+#references div[id^="ref-"],
+.references > div {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  border-left: 4px solid #4e9db5;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+
+#references div[id^="ref-"]:hover,
+.references > div:hover {
+  border-left-color: #7cc349;
+  background: rgba(78, 157, 181, 0.03);
+  transform: translateX(3px);
+}
+
+/* Citation text styling */
+.csl-entry,
+#references div[id^="ref-"] p,
+.references p {
+  margin: 0;
+  color: #19424e;
+  font-size: 0.95em;
+}
+
+/* DOI and URL links */
+#references a,
+.references a,
+.csl-entry a {
+  color: #4e9db5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+#references a:hover,
+.references a:hover,
+.csl-entry a:hover {
+  color: #7cc349;
+  text-decoration: underline;
+}
+
+/* Hanging indent for references */
+.csl-entry {
+  padding-left: 2em;
+  text-indent: -2em;
+}
