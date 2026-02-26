@@ -27,10 +27,10 @@ format:
     page-layout: full
     theme: default
     css: 
-      - "resources/css/html_post_styles.css"
-      - "resources/css/author_affiliation.css"
-      - "resources/css/buttons.css"
-      - "resources/fontawesome/css/all.min.css"
+      - "../../_extensions/ccbr-themes/resources/css/html_post_styles.css"
+      - "../../_extensions/ccbr-themes/resources/css/author_affiliation.css"
+      - "../../_extensions/ccbr-themes/resources/css/buttons.css"
+      - "../../_extensions/ccbr-themes/resources/fontawesome/css/all.min.css"
     grid:
       margin-width: 250px
 params:
@@ -54,6 +54,7 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 
 <!-- Filled Buttons -->
 [View Repository](https://github.com/user/repo){.btn-github}
+[CCBR](https://github.com/CCBR){.btn-sitemap}
 [OneDrive Folder](https://onedrive.com/folder){.btn-onedrive}
 [Google Drive](https://drive.google.com/folder){.btn-gdrive}
 [Dropbox Files](https://dropbox.com/folder){.btn-dropbox}
@@ -71,6 +72,7 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 [OneDrive (Outline)](https://onedrive.com/folder){.btn-outline-onedrive}
 
 
+#### Button Groups
 <!-- Button Groups (multiple buttons together) -->
 ::: {.btn-group}
 [GitHub](https://github.com){.btn-github}
@@ -98,9 +100,14 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 [Quick Link](link-url){.btn-pill}
 [Tag Style](link-url){.btn-pill}
 
+#### Icon buttons
+
 [🔗](link-url){.btn-icon}
 [📊](link-url){.btn-icon}
 [📁](link-url){.btn-icon}
+
+
+#### Button Group
 
 ::: {.btn-group}
 [Primary Action](link1){.btn-primary}
@@ -305,12 +312,10 @@ pie(pie2,
 #### Footer
 
 ::: {.ccbr-footer}
-<div class="ccbr-footer-content">
-  Created by Samarth Mathur, PhD
-</div>
-<div class="footer-badges">
-  <a href="mailto:samarth.mathur@nih.gov" class="email-badge">Email Me</a>
-  <a href="https://github.com/samarth8392" class="github-badge">My Github</a>
-  <a href="https://github.com/CCBR" class="ccbr-badge">CCBR Team</a>
-</div>
+Created by **Samarth Mathur, PhD** • NIH/NCI/CCR/CCBR
+
+[GitHub](https://github.com/samarth8392){.btn-outline-github .btn-sm}
+[Documentation](https://samarth8392.github.io/ccbr-themes){.btn-outline-docs .btn-sm}
+[Email](mailto:samarth.mathur@nih.gov){.btn-outline-email .btn-sm}
+[CCBR](https://samarth8392.github.io/ccbr-themes){.btn-outline-sitemap .btn-sm}
 :::

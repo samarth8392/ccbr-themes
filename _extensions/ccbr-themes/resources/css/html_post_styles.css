@@ -224,7 +224,7 @@ a:hover {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   color: var(--teal-dark);
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   margin-top: 50px;
   border-top: 2px solid var(--lime);
   border-radius: 8px 8px 0 0;
@@ -233,6 +233,10 @@ a:hover {
   letter-spacing: 0.5px;
   box-shadow: 0 -2px 10px rgba(41, 107, 127, 0.1);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .ccbr-footer::before {
@@ -245,7 +249,12 @@ a:hover {
   background: linear-gradient(90deg, transparent 0%, var(--lime) 50%, transparent 100%);
 }
 
-.ccbr-footer a {
+.ccbr-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.ccbr-footer a:not([class*="btn-"]) {
   color: var(--teal);
   text-decoration: none;
   font-weight: 500;
@@ -255,7 +264,7 @@ a:hover {
   position: relative;
 }
 
-.ccbr-footer a:hover {
+.ccbr-footer a:not([class*="btn-"]):hover {
   color: var(--teal-dark);
   background-color: rgba(124, 195, 73, 0.1);
   text-decoration: none;
@@ -267,6 +276,33 @@ a:hover {
   color: var(--lime-dark);
   opacity: 0.8;
   font-weight: 500;
+}
+
+/* Button group in footer */
+.ccbr-footer .btn-group {
+  justify-content: center;
+  margin: 5px 0 0 0;
+  gap: 8px;
+}
+
+/* Buttons in footer - slightly smaller and more subtle */
+.ccbr-footer [class*="btn-"] {
+  margin: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.ccbr-footer [class*="btn-"]:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Horizontal rule in footer */
+.ccbr-footer hr {
+  width: 60%;
+  margin: 10px auto;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--lime) 50%, transparent 100%);
+  opacity: 0.5;
 }
 
 /* Modern email badge styles - clean and readable */
