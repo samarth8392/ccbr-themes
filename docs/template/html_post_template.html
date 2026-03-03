@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Samarth Mathur">
-<meta name="dcterms.date" content="2026-02-26">
+<meta name="dcterms.date" content="2026-03-03">
 
 <title>CCBR XXXX: Your project Title</title>
 <style>
@@ -4523,6 +4523,48 @@ color: var(--teal-dark);
 text-decoration: underline;
 }
 
+.callout-note .callout-body-container.callout-body p,
+.callout-tip .callout-body-container.callout-body p,
+.callout-warning .callout-body-container.callout-body p,
+.callout-caution .callout-body-container.callout-body p,
+.callout-important .callout-body-container.callout-body p {
+font-size: 1.1rem !important;
+font-weight: 400 !important;
+}
+.callout-note .callout-header,
+.callout-tip .callout-header,
+.callout-warning .callout-header,
+.callout-caution .callout-header,
+.callout-important .callout-header {
+font-size: 1.3rem !important;
+font-weight: 700 !important;
+}
+
+.callout-note {
+border-left: 4px solid #7aaad7 !important;
+background-color: rgba(154, 183, 210, 0.1) !important;
+}
+
+.callout-tip {
+border-left: 4px solid #5aab5a !important;
+background-color: rgba(123, 168, 123, 0.1) !important;
+}
+
+.callout-warning {
+border-left: 4px solid #d4a017 !important;
+background-color: rgba(250, 232, 173, 0.1) !important;
+}
+
+.callout-caution {
+border-left: 4px solid #e07b39 !important;
+background-color: rgba(205, 171, 149, 0.1) !important;
+}
+
+.callout-important {
+border-left: 4px solid #d95f5f !important;
+background-color: rgba(211, 146, 146, 0.1) !important;
+}
+
 .ccbr-footer {
 background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 color: var(--teal-dark);
@@ -6528,7 +6570,7 @@ text-decoration: none;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 26, 2026</p>
+        <p class="date">March 3, 2026</p>
       </div>
     </div>
     
@@ -6566,6 +6608,7 @@ text-decoration: none;
   <li><a href="#icon-buttons" id="toc-icon-buttons">Icon buttons</a></li>
   <li><a href="#button-group" id="toc-button-group">Button Group</a></li>
   </ul></li>
+  <li><a href="#callout-notes" id="toc-callout-notes">Callout notes</a></li>
   <li><a href="#data-visualization-in-tabs-examples" id="toc-data-visualization-in-tabs-examples">Data Visualization (in Tabs) Examples</a>
   <ul>
   <li><a href="#different-base-r-styles" id="toc-different-base-r-styles">Different Base R Styles</a></li>
@@ -6577,7 +6620,7 @@ text-decoration: none;
   </ul></li>
   </ul>
 </nav>
-<p><span class="last-modified">📝 Last modified: 02-26-2026 </span></p>
+<p><span class="last-modified">📝 Last modified: 03-03-2026 </span></p>
 <section id="header-1" class="level1">
 <h1>Header 1</h1>
 <section id="header-2" class="level2">
@@ -6622,6 +6665,74 @@ text-decoration: none;
 </div>
 <p><a href="link-url" class="btn-outline-primary">primary</a> <a href="link-url" class="btn-outline-light">light</a> <a href="link-url" class="btn-outline-soft">soft</a> <a href="link-url" class="btn-outline-pastel">pastel</a> <a href="link-url" class="btn-outline-mint">mint</a></p>
 </section>
+</section>
+<section id="callout-notes" class="level1">
+<h1>Callout notes</h1>
+<div id="note1" class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is an important note</p>
+</div>
+</div>
+<div id="note2" class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a tip note</p>
+</div>
+</div>
+<div id="note3" class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a warning note</p>
+</div>
+</div>
+<div id="note4" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a simple note</p>
+</div>
+</div>
+<div id="note5" class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a caution note</p>
+</div>
+</div>
 </section>
 <section id="data-visualization-in-tabs-examples" class="level1">
 <h1>Data Visualization (in Tabs) Examples</h1>
@@ -7281,204 +7392,236 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb10-121"><a href="#cb10-121"></a><span class="co">[</span><span class="ot">pastel</span><span class="co">](link-url)</span>{.btn-outline-pastel}</span>
 <span id="cb10-122"><a href="#cb10-122"></a><span class="co">[</span><span class="ot">mint</span><span class="co">](link-url)</span>{.btn-outline-mint}</span>
 <span id="cb10-123"><a href="#cb10-123"></a></span>
-<span id="cb10-124"><a href="#cb10-124"></a><span class="fu"># Data Visualization (in Tabs) Examples</span></span>
+<span id="cb10-124"><a href="#cb10-124"></a><span class="fu"># Callout notes</span></span>
 <span id="cb10-125"><a href="#cb10-125"></a></span>
-<span id="cb10-126"><a href="#cb10-126"></a>::: {.panel-tabset .theme-ccbr-poppy}</span>
-<span id="cb10-127"><a href="#cb10-127"></a></span>
-<span id="cb10-128"><a href="#cb10-128"></a><span class="fu">## Scatter Plot</span></span>
-<span id="cb10-129"><a href="#cb10-129"></a></span>
-<span id="cb10-132"><a href="#cb10-132"></a><span class="in">```{r}</span></span>
-<span id="cb10-133"><a href="#cb10-133"></a><span class="co"># Generate random data</span></span>
-<span id="cb10-134"><a href="#cb10-134"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb10-135"><a href="#cb10-135"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">10</span>)</span>
-<span id="cb10-136"><a href="#cb10-136"></a>y <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb10-126"><a href="#cb10-126"></a>::: {#note1 .callout-important}</span>
+<span id="cb10-127"><a href="#cb10-127"></a><span class="fu">## Important</span></span>
+<span id="cb10-128"><a href="#cb10-128"></a></span>
+<span id="cb10-129"><a href="#cb10-129"></a>This is an important note</span>
+<span id="cb10-130"><a href="#cb10-130"></a>:::</span>
+<span id="cb10-131"><a href="#cb10-131"></a></span>
+<span id="cb10-132"><a href="#cb10-132"></a>::: {#note2 .callout-tip}</span>
+<span id="cb10-133"><a href="#cb10-133"></a><span class="fu">## Tip</span></span>
+<span id="cb10-134"><a href="#cb10-134"></a></span>
+<span id="cb10-135"><a href="#cb10-135"></a>This is a tip note</span>
+<span id="cb10-136"><a href="#cb10-136"></a>:::</span>
 <span id="cb10-137"><a href="#cb10-137"></a></span>
-<span id="cb10-138"><a href="#cb10-138"></a><span class="co"># Create scatter plot</span></span>
-<span id="cb10-139"><a href="#cb10-139"></a><span class="fu">plot</span>(x, y, </span>
-<span id="cb10-140"><a href="#cb10-140"></a>     <span class="at">pch =</span> <span class="dv">16</span>, </span>
-<span id="cb10-141"><a href="#cb10-141"></a>     <span class="at">col =</span> <span class="st">&quot;#4e9db5&quot;</span>, </span>
-<span id="cb10-142"><a href="#cb10-142"></a>     <span class="at">cex =</span> <span class="fl">1.5</span>,</span>
-<span id="cb10-143"><a href="#cb10-143"></a>     <span class="at">main =</span> <span class="st">&quot;Random Scatter Plot&quot;</span>,</span>
-<span id="cb10-144"><a href="#cb10-144"></a>     <span class="at">xlab =</span> <span class="st">&quot;X values&quot;</span>, </span>
-<span id="cb10-145"><a href="#cb10-145"></a>     <span class="at">ylab =</span> <span class="st">&quot;Y values&quot;</span>)</span>
-<span id="cb10-146"><a href="#cb10-146"></a><span class="in">```</span></span>
-<span id="cb10-147"><a href="#cb10-147"></a></span>
-<span id="cb10-148"><a href="#cb10-148"></a><span class="fu">## Bar Plot</span></span>
+<span id="cb10-138"><a href="#cb10-138"></a>::: {#note3 .callout-warning}</span>
+<span id="cb10-139"><a href="#cb10-139"></a><span class="fu">## Warning</span></span>
+<span id="cb10-140"><a href="#cb10-140"></a></span>
+<span id="cb10-141"><a href="#cb10-141"></a>This is a warning note</span>
+<span id="cb10-142"><a href="#cb10-142"></a>:::</span>
+<span id="cb10-143"><a href="#cb10-143"></a></span>
+<span id="cb10-144"><a href="#cb10-144"></a>::: {#note4 .callout-note}</span>
+<span id="cb10-145"><a href="#cb10-145"></a><span class="fu">## Note</span></span>
+<span id="cb10-146"><a href="#cb10-146"></a></span>
+<span id="cb10-147"><a href="#cb10-147"></a>This is a simple note</span>
+<span id="cb10-148"><a href="#cb10-148"></a>:::</span>
 <span id="cb10-149"><a href="#cb10-149"></a></span>
-<span id="cb10-152"><a href="#cb10-152"></a><span class="in">```{r}</span></span>
-<span id="cb10-153"><a href="#cb10-153"></a><span class="co"># Sample data</span></span>
-<span id="cb10-154"><a href="#cb10-154"></a>categories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span>)</span>
-<span id="cb10-155"><a href="#cb10-155"></a>values <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">17</span>, <span class="dv">35</span>, <span class="dv">29</span>, <span class="dv">12</span>)</span>
-<span id="cb10-156"><a href="#cb10-156"></a></span>
-<span id="cb10-157"><a href="#cb10-157"></a><span class="co"># Create bar plot</span></span>
-<span id="cb10-158"><a href="#cb10-158"></a><span class="fu">barplot</span>(values, </span>
-<span id="cb10-159"><a href="#cb10-159"></a>        <span class="at">names.arg =</span> categories,</span>
-<span id="cb10-160"><a href="#cb10-160"></a>        <span class="at">col =</span> <span class="st">&quot;#7cc349&quot;</span>,</span>
-<span id="cb10-161"><a href="#cb10-161"></a>        <span class="at">main =</span> <span class="st">&quot;Category Comparison&quot;</span>,</span>
-<span id="cb10-162"><a href="#cb10-162"></a>        <span class="at">xlab =</span> <span class="st">&quot;Categories&quot;</span>, </span>
-<span id="cb10-163"><a href="#cb10-163"></a>        <span class="at">ylab =</span> <span class="st">&quot;Values&quot;</span>,</span>
-<span id="cb10-164"><a href="#cb10-164"></a>        <span class="at">border =</span> <span class="st">&quot;#528230&quot;</span>)</span>
-<span id="cb10-165"><a href="#cb10-165"></a><span class="in">```</span></span>
-<span id="cb10-166"><a href="#cb10-166"></a></span>
-<span id="cb10-167"><a href="#cb10-167"></a><span class="fu">## Pie Chart</span></span>
-<span id="cb10-168"><a href="#cb10-168"></a></span>
-<span id="cb10-171"><a href="#cb10-171"></a><span class="in">```{r}</span></span>
-<span id="cb10-172"><a href="#cb10-172"></a><span class="co"># Data for pie chart</span></span>
-<span id="cb10-173"><a href="#cb10-173"></a>labels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Research&quot;</span>, <span class="st">&quot;Analysis&quot;</span>, <span class="st">&quot;Writing&quot;</span>, <span class="st">&quot;Review&quot;</span>)</span>
-<span id="cb10-174"><a href="#cb10-174"></a>sizes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">35</span>, <span class="dv">25</span>, <span class="dv">25</span>, <span class="dv">15</span>)</span>
-<span id="cb10-175"><a href="#cb10-175"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>, <span class="st">&quot;#296b7f&quot;</span>)</span>
-<span id="cb10-176"><a href="#cb10-176"></a></span>
-<span id="cb10-177"><a href="#cb10-177"></a><span class="co"># Create pie chart</span></span>
-<span id="cb10-178"><a href="#cb10-178"></a><span class="fu">pie</span>(sizes, </span>
-<span id="cb10-179"><a href="#cb10-179"></a>    <span class="at">labels =</span> labels, </span>
-<span id="cb10-180"><a href="#cb10-180"></a>    <span class="at">col =</span> colors,</span>
-<span id="cb10-181"><a href="#cb10-181"></a>    <span class="at">main =</span> <span class="st">&quot;Project Time Distribution&quot;</span>)</span>
-<span id="cb10-182"><a href="#cb10-182"></a><span class="in">```</span></span>
-<span id="cb10-183"><a href="#cb10-183"></a></span>
-<span id="cb10-184"><a href="#cb10-184"></a>:::</span>
-<span id="cb10-185"><a href="#cb10-185"></a></span>
-<span id="cb10-186"><a href="#cb10-186"></a><span class="fu">## Different Base R Styles</span></span>
-<span id="cb10-187"><a href="#cb10-187"></a></span>
-<span id="cb10-188"><a href="#cb10-188"></a>::: {.panel-tabset .theme-ccbr-scientific}</span>
-<span id="cb10-189"><a href="#cb10-189"></a></span>
-<span id="cb10-190"><a href="#cb10-190"></a><span class="fu">## Enhanced Scatter</span></span>
-<span id="cb10-191"><a href="#cb10-191"></a></span>
-<span id="cb10-194"><a href="#cb10-194"></a><span class="in">```{r}</span></span>
-<span id="cb10-195"><a href="#cb10-195"></a><span class="co"># Random data with grid</span></span>
-<span id="cb10-196"><a href="#cb10-196"></a><span class="fu">set.seed</span>(<span class="dv">789</span>)</span>
-<span id="cb10-197"><a href="#cb10-197"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">8</span>)</span>
-<span id="cb10-198"><a href="#cb10-198"></a>y <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">9</span>)</span>
-<span id="cb10-199"><a href="#cb10-199"></a></span>
-<span id="cb10-200"><a href="#cb10-200"></a><span class="co"># Enhanced scatter plot</span></span>
-<span id="cb10-201"><a href="#cb10-201"></a><span class="fu">plot</span>(x, y, </span>
-<span id="cb10-202"><a href="#cb10-202"></a>     <span class="at">pch =</span> <span class="dv">19</span>, </span>
-<span id="cb10-203"><a href="#cb10-203"></a>     <span class="at">col =</span> <span class="st">&quot;#296b7f&quot;</span>, </span>
-<span id="cb10-204"><a href="#cb10-204"></a>     <span class="at">cex =</span> <span class="dv">2</span>,</span>
-<span id="cb10-205"><a href="#cb10-205"></a>     <span class="at">main =</span> <span class="st">&quot;Enhanced Scatter Plot&quot;</span>,</span>
-<span id="cb10-206"><a href="#cb10-206"></a>     <span class="at">xlab =</span> <span class="st">&quot;X values&quot;</span>, </span>
-<span id="cb10-207"><a href="#cb10-207"></a>     <span class="at">ylab =</span> <span class="st">&quot;Y values&quot;</span>,</span>
-<span id="cb10-208"><a href="#cb10-208"></a>     <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>),</span>
-<span id="cb10-209"><a href="#cb10-209"></a>     <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>))</span>
-<span id="cb10-210"><a href="#cb10-210"></a><span class="fu">grid</span>(<span class="at">col =</span> <span class="st">&quot;gray&quot;</span>, <span class="at">lty =</span> <span class="st">&quot;dotted&quot;</span>)</span>
-<span id="cb10-211"><a href="#cb10-211"></a><span class="in">```</span></span>
-<span id="cb10-212"><a href="#cb10-212"></a></span>
-<span id="cb10-213"><a href="#cb10-213"></a><span class="fu">## Horizontal Bar</span></span>
-<span id="cb10-214"><a href="#cb10-214"></a></span>
-<span id="cb10-217"><a href="#cb10-217"></a><span class="in">```{r}</span></span>
-<span id="cb10-218"><a href="#cb10-218"></a><span class="co"># Data for horizontal bars</span></span>
-<span id="cb10-219"><a href="#cb10-219"></a>items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Item A&quot;</span>, <span class="st">&quot;Item B&quot;</span>, <span class="st">&quot;Item C&quot;</span>, <span class="st">&quot;Item D&quot;</span>)</span>
-<span id="cb10-220"><a href="#cb10-220"></a>counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">28</span>, <span class="dv">22</span>, <span class="dv">19</span>)</span>
+<span id="cb10-150"><a href="#cb10-150"></a>::: {#note5 .callout-caution}</span>
+<span id="cb10-151"><a href="#cb10-151"></a><span class="fu">## Caution</span></span>
+<span id="cb10-152"><a href="#cb10-152"></a></span>
+<span id="cb10-153"><a href="#cb10-153"></a>This is a caution note</span>
+<span id="cb10-154"><a href="#cb10-154"></a>:::</span>
+<span id="cb10-155"><a href="#cb10-155"></a></span>
+<span id="cb10-156"><a href="#cb10-156"></a><span class="fu"># Data Visualization (in Tabs) Examples</span></span>
+<span id="cb10-157"><a href="#cb10-157"></a></span>
+<span id="cb10-158"><a href="#cb10-158"></a>::: {.panel-tabset .theme-ccbr-poppy}</span>
+<span id="cb10-159"><a href="#cb10-159"></a></span>
+<span id="cb10-160"><a href="#cb10-160"></a><span class="fu">## Scatter Plot</span></span>
+<span id="cb10-161"><a href="#cb10-161"></a></span>
+<span id="cb10-164"><a href="#cb10-164"></a><span class="in">```{r}</span></span>
+<span id="cb10-165"><a href="#cb10-165"></a><span class="co"># Generate random data</span></span>
+<span id="cb10-166"><a href="#cb10-166"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb10-167"><a href="#cb10-167"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb10-168"><a href="#cb10-168"></a>y <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb10-169"><a href="#cb10-169"></a></span>
+<span id="cb10-170"><a href="#cb10-170"></a><span class="co"># Create scatter plot</span></span>
+<span id="cb10-171"><a href="#cb10-171"></a><span class="fu">plot</span>(x, y, </span>
+<span id="cb10-172"><a href="#cb10-172"></a>     <span class="at">pch =</span> <span class="dv">16</span>, </span>
+<span id="cb10-173"><a href="#cb10-173"></a>     <span class="at">col =</span> <span class="st">&quot;#4e9db5&quot;</span>, </span>
+<span id="cb10-174"><a href="#cb10-174"></a>     <span class="at">cex =</span> <span class="fl">1.5</span>,</span>
+<span id="cb10-175"><a href="#cb10-175"></a>     <span class="at">main =</span> <span class="st">&quot;Random Scatter Plot&quot;</span>,</span>
+<span id="cb10-176"><a href="#cb10-176"></a>     <span class="at">xlab =</span> <span class="st">&quot;X values&quot;</span>, </span>
+<span id="cb10-177"><a href="#cb10-177"></a>     <span class="at">ylab =</span> <span class="st">&quot;Y values&quot;</span>)</span>
+<span id="cb10-178"><a href="#cb10-178"></a><span class="in">```</span></span>
+<span id="cb10-179"><a href="#cb10-179"></a></span>
+<span id="cb10-180"><a href="#cb10-180"></a><span class="fu">## Bar Plot</span></span>
+<span id="cb10-181"><a href="#cb10-181"></a></span>
+<span id="cb10-184"><a href="#cb10-184"></a><span class="in">```{r}</span></span>
+<span id="cb10-185"><a href="#cb10-185"></a><span class="co"># Sample data</span></span>
+<span id="cb10-186"><a href="#cb10-186"></a>categories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span>)</span>
+<span id="cb10-187"><a href="#cb10-187"></a>values <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">17</span>, <span class="dv">35</span>, <span class="dv">29</span>, <span class="dv">12</span>)</span>
+<span id="cb10-188"><a href="#cb10-188"></a></span>
+<span id="cb10-189"><a href="#cb10-189"></a><span class="co"># Create bar plot</span></span>
+<span id="cb10-190"><a href="#cb10-190"></a><span class="fu">barplot</span>(values, </span>
+<span id="cb10-191"><a href="#cb10-191"></a>        <span class="at">names.arg =</span> categories,</span>
+<span id="cb10-192"><a href="#cb10-192"></a>        <span class="at">col =</span> <span class="st">&quot;#7cc349&quot;</span>,</span>
+<span id="cb10-193"><a href="#cb10-193"></a>        <span class="at">main =</span> <span class="st">&quot;Category Comparison&quot;</span>,</span>
+<span id="cb10-194"><a href="#cb10-194"></a>        <span class="at">xlab =</span> <span class="st">&quot;Categories&quot;</span>, </span>
+<span id="cb10-195"><a href="#cb10-195"></a>        <span class="at">ylab =</span> <span class="st">&quot;Values&quot;</span>,</span>
+<span id="cb10-196"><a href="#cb10-196"></a>        <span class="at">border =</span> <span class="st">&quot;#528230&quot;</span>)</span>
+<span id="cb10-197"><a href="#cb10-197"></a><span class="in">```</span></span>
+<span id="cb10-198"><a href="#cb10-198"></a></span>
+<span id="cb10-199"><a href="#cb10-199"></a><span class="fu">## Pie Chart</span></span>
+<span id="cb10-200"><a href="#cb10-200"></a></span>
+<span id="cb10-203"><a href="#cb10-203"></a><span class="in">```{r}</span></span>
+<span id="cb10-204"><a href="#cb10-204"></a><span class="co"># Data for pie chart</span></span>
+<span id="cb10-205"><a href="#cb10-205"></a>labels <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Research&quot;</span>, <span class="st">&quot;Analysis&quot;</span>, <span class="st">&quot;Writing&quot;</span>, <span class="st">&quot;Review&quot;</span>)</span>
+<span id="cb10-206"><a href="#cb10-206"></a>sizes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">35</span>, <span class="dv">25</span>, <span class="dv">25</span>, <span class="dv">15</span>)</span>
+<span id="cb10-207"><a href="#cb10-207"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>, <span class="st">&quot;#296b7f&quot;</span>)</span>
+<span id="cb10-208"><a href="#cb10-208"></a></span>
+<span id="cb10-209"><a href="#cb10-209"></a><span class="co"># Create pie chart</span></span>
+<span id="cb10-210"><a href="#cb10-210"></a><span class="fu">pie</span>(sizes, </span>
+<span id="cb10-211"><a href="#cb10-211"></a>    <span class="at">labels =</span> labels, </span>
+<span id="cb10-212"><a href="#cb10-212"></a>    <span class="at">col =</span> colors,</span>
+<span id="cb10-213"><a href="#cb10-213"></a>    <span class="at">main =</span> <span class="st">&quot;Project Time Distribution&quot;</span>)</span>
+<span id="cb10-214"><a href="#cb10-214"></a><span class="in">```</span></span>
+<span id="cb10-215"><a href="#cb10-215"></a></span>
+<span id="cb10-216"><a href="#cb10-216"></a>:::</span>
+<span id="cb10-217"><a href="#cb10-217"></a></span>
+<span id="cb10-218"><a href="#cb10-218"></a><span class="fu">## Different Base R Styles</span></span>
+<span id="cb10-219"><a href="#cb10-219"></a></span>
+<span id="cb10-220"><a href="#cb10-220"></a>::: {.panel-tabset .theme-ccbr-scientific}</span>
 <span id="cb10-221"><a href="#cb10-221"></a></span>
-<span id="cb10-222"><a href="#cb10-222"></a><span class="co"># Horizontal barplot</span></span>
-<span id="cb10-223"><a href="#cb10-223"></a><span class="fu">barplot</span>(counts, </span>
-<span id="cb10-224"><a href="#cb10-224"></a>        <span class="at">names.arg =</span> items,</span>
-<span id="cb10-225"><a href="#cb10-225"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb10-226"><a href="#cb10-226"></a>        <span class="at">col =</span> <span class="st">&quot;#7cc349&quot;</span>,</span>
-<span id="cb10-227"><a href="#cb10-227"></a>        <span class="at">main =</span> <span class="st">&quot;Horizontal Bar Chart&quot;</span>,</span>
-<span id="cb10-228"><a href="#cb10-228"></a>        <span class="at">xlab =</span> <span class="st">&quot;Count&quot;</span>,</span>
-<span id="cb10-229"><a href="#cb10-229"></a>        <span class="at">border =</span> <span class="st">&quot;#528230&quot;</span>)</span>
-<span id="cb10-230"><a href="#cb10-230"></a><span class="in">```</span></span>
+<span id="cb10-222"><a href="#cb10-222"></a><span class="fu">## Enhanced Scatter</span></span>
+<span id="cb10-223"><a href="#cb10-223"></a></span>
+<span id="cb10-226"><a href="#cb10-226"></a><span class="in">```{r}</span></span>
+<span id="cb10-227"><a href="#cb10-227"></a><span class="co"># Random data with grid</span></span>
+<span id="cb10-228"><a href="#cb10-228"></a><span class="fu">set.seed</span>(<span class="dv">789</span>)</span>
+<span id="cb10-229"><a href="#cb10-229"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">8</span>)</span>
+<span id="cb10-230"><a href="#cb10-230"></a>y <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">9</span>)</span>
 <span id="cb10-231"><a href="#cb10-231"></a></span>
-<span id="cb10-232"><a href="#cb10-232"></a><span class="fu">## Donut-style Pie</span></span>
-<span id="cb10-233"><a href="#cb10-233"></a></span>
-<span id="cb10-236"><a href="#cb10-236"></a><span class="in">```{r}</span></span>
-<span id="cb10-237"><a href="#cb10-237"></a><span class="co"># Simple data</span></span>
-<span id="cb10-238"><a href="#cb10-238"></a>activity <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Coding&quot;</span>, <span class="st">&quot;Testing&quot;</span>, <span class="st">&quot;Documentation&quot;</span>, <span class="st">&quot;Meetings&quot;</span>)</span>
-<span id="cb10-239"><a href="#cb10-239"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">15</span>)</span>
-<span id="cb10-240"><a href="#cb10-240"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>, <span class="st">&quot;#19424e&quot;</span>)</span>
-<span id="cb10-241"><a href="#cb10-241"></a></span>
-<span id="cb10-242"><a href="#cb10-242"></a><span class="co"># Create pie chart</span></span>
-<span id="cb10-243"><a href="#cb10-243"></a><span class="fu">pie</span>(time, </span>
-<span id="cb10-244"><a href="#cb10-244"></a>    <span class="at">labels =</span> <span class="fu">paste</span>(activity, <span class="st">&quot;(&quot;</span>, time, <span class="st">&quot;%)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>), </span>
-<span id="cb10-245"><a href="#cb10-245"></a>    <span class="at">col =</span> colors,</span>
-<span id="cb10-246"><a href="#cb10-246"></a>    <span class="at">main =</span> <span class="st">&quot;Time Allocation&quot;</span>,</span>
-<span id="cb10-247"><a href="#cb10-247"></a>    <span class="at">clockwise =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb10-248"><a href="#cb10-248"></a><span class="in">```</span></span>
-<span id="cb10-249"><a href="#cb10-249"></a></span>
-<span id="cb10-250"><a href="#cb10-250"></a>:::</span>
-<span id="cb10-251"><a href="#cb10-251"></a></span>
-<span id="cb10-252"><a href="#cb10-252"></a><span class="fu">## More Base R Variations</span></span>
+<span id="cb10-232"><a href="#cb10-232"></a><span class="co"># Enhanced scatter plot</span></span>
+<span id="cb10-233"><a href="#cb10-233"></a><span class="fu">plot</span>(x, y, </span>
+<span id="cb10-234"><a href="#cb10-234"></a>     <span class="at">pch =</span> <span class="dv">19</span>, </span>
+<span id="cb10-235"><a href="#cb10-235"></a>     <span class="at">col =</span> <span class="st">&quot;#296b7f&quot;</span>, </span>
+<span id="cb10-236"><a href="#cb10-236"></a>     <span class="at">cex =</span> <span class="dv">2</span>,</span>
+<span id="cb10-237"><a href="#cb10-237"></a>     <span class="at">main =</span> <span class="st">&quot;Enhanced Scatter Plot&quot;</span>,</span>
+<span id="cb10-238"><a href="#cb10-238"></a>     <span class="at">xlab =</span> <span class="st">&quot;X values&quot;</span>, </span>
+<span id="cb10-239"><a href="#cb10-239"></a>     <span class="at">ylab =</span> <span class="st">&quot;Y values&quot;</span>,</span>
+<span id="cb10-240"><a href="#cb10-240"></a>     <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>),</span>
+<span id="cb10-241"><a href="#cb10-241"></a>     <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>))</span>
+<span id="cb10-242"><a href="#cb10-242"></a><span class="fu">grid</span>(<span class="at">col =</span> <span class="st">&quot;gray&quot;</span>, <span class="at">lty =</span> <span class="st">&quot;dotted&quot;</span>)</span>
+<span id="cb10-243"><a href="#cb10-243"></a><span class="in">```</span></span>
+<span id="cb10-244"><a href="#cb10-244"></a></span>
+<span id="cb10-245"><a href="#cb10-245"></a><span class="fu">## Horizontal Bar</span></span>
+<span id="cb10-246"><a href="#cb10-246"></a></span>
+<span id="cb10-249"><a href="#cb10-249"></a><span class="in">```{r}</span></span>
+<span id="cb10-250"><a href="#cb10-250"></a><span class="co"># Data for horizontal bars</span></span>
+<span id="cb10-251"><a href="#cb10-251"></a>items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Item A&quot;</span>, <span class="st">&quot;Item B&quot;</span>, <span class="st">&quot;Item C&quot;</span>, <span class="st">&quot;Item D&quot;</span>)</span>
+<span id="cb10-252"><a href="#cb10-252"></a>counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">28</span>, <span class="dv">22</span>, <span class="dv">19</span>)</span>
 <span id="cb10-253"><a href="#cb10-253"></a></span>
-<span id="cb10-254"><a href="#cb10-254"></a>::: {.panel-tabset .theme-ccbr-gradient}</span>
-<span id="cb10-255"><a href="#cb10-255"></a></span>
-<span id="cb10-256"><a href="#cb10-256"></a><span class="fu">## Line + Points</span></span>
-<span id="cb10-257"><a href="#cb10-257"></a></span>
-<span id="cb10-260"><a href="#cb10-260"></a><span class="in">```{r}</span></span>
-<span id="cb10-261"><a href="#cb10-261"></a><span class="co"># Time series style data</span></span>
-<span id="cb10-262"><a href="#cb10-262"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
-<span id="cb10-263"><a href="#cb10-263"></a>time <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
-<span id="cb10-264"><a href="#cb10-264"></a>values <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
+<span id="cb10-254"><a href="#cb10-254"></a><span class="co"># Horizontal barplot</span></span>
+<span id="cb10-255"><a href="#cb10-255"></a><span class="fu">barplot</span>(counts, </span>
+<span id="cb10-256"><a href="#cb10-256"></a>        <span class="at">names.arg =</span> items,</span>
+<span id="cb10-257"><a href="#cb10-257"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb10-258"><a href="#cb10-258"></a>        <span class="at">col =</span> <span class="st">&quot;#7cc349&quot;</span>,</span>
+<span id="cb10-259"><a href="#cb10-259"></a>        <span class="at">main =</span> <span class="st">&quot;Horizontal Bar Chart&quot;</span>,</span>
+<span id="cb10-260"><a href="#cb10-260"></a>        <span class="at">xlab =</span> <span class="st">&quot;Count&quot;</span>,</span>
+<span id="cb10-261"><a href="#cb10-261"></a>        <span class="at">border =</span> <span class="st">&quot;#528230&quot;</span>)</span>
+<span id="cb10-262"><a href="#cb10-262"></a><span class="in">```</span></span>
+<span id="cb10-263"><a href="#cb10-263"></a></span>
+<span id="cb10-264"><a href="#cb10-264"></a><span class="fu">## Donut-style Pie</span></span>
 <span id="cb10-265"><a href="#cb10-265"></a></span>
-<span id="cb10-266"><a href="#cb10-266"></a><span class="co"># Line plot with points</span></span>
-<span id="cb10-267"><a href="#cb10-267"></a><span class="fu">plot</span>(time, values, </span>
-<span id="cb10-268"><a href="#cb10-268"></a>     <span class="at">type =</span> <span class="st">&quot;b&quot;</span>,</span>
-<span id="cb10-269"><a href="#cb10-269"></a>     <span class="at">pch =</span> <span class="dv">16</span>,</span>
-<span id="cb10-270"><a href="#cb10-270"></a>     <span class="at">col =</span> <span class="st">&quot;#296b7f&quot;</span>,</span>
-<span id="cb10-271"><a href="#cb10-271"></a>     <span class="at">lwd =</span> <span class="dv">2</span>,</span>
-<span id="cb10-272"><a href="#cb10-272"></a>     <span class="at">main =</span> <span class="st">&quot;Trend Over Time&quot;</span>,</span>
-<span id="cb10-273"><a href="#cb10-273"></a>     <span class="at">xlab =</span> <span class="st">&quot;Time Point&quot;</span>,</span>
-<span id="cb10-274"><a href="#cb10-274"></a>     <span class="at">ylab =</span> <span class="st">&quot;Cumulative Value&quot;</span>)</span>
-<span id="cb10-275"><a href="#cb10-275"></a><span class="in">```</span></span>
-<span id="cb10-276"><a href="#cb10-276"></a></span>
-<span id="cb10-277"><a href="#cb10-277"></a><span class="fu">## Stacked Bar</span></span>
-<span id="cb10-278"><a href="#cb10-278"></a></span>
-<span id="cb10-281"><a href="#cb10-281"></a><span class="in">```{r}</span></span>
-<span id="cb10-282"><a href="#cb10-282"></a><span class="co"># Matrix for stacked bars</span></span>
-<span id="cb10-283"><a href="#cb10-283"></a>data_matrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">8</span>, <span class="dv">15</span>, </span>
-<span id="cb10-284"><a href="#cb10-284"></a>                       <span class="dv">18</span>, <span class="dv">12</span>, <span class="dv">10</span>, </span>
-<span id="cb10-285"><a href="#cb10-285"></a>                       <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>), </span>
-<span id="cb10-286"><a href="#cb10-286"></a>                     <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb10-287"><a href="#cb10-287"></a><span class="fu">colnames</span>(data_matrix) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Group A&quot;</span>, <span class="st">&quot;Group B&quot;</span>, <span class="st">&quot;Group C&quot;</span>)</span>
-<span id="cb10-288"><a href="#cb10-288"></a><span class="fu">rownames</span>(data_matrix) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Category 1&quot;</span>, <span class="st">&quot;Category 2&quot;</span>, <span class="st">&quot;Category 3&quot;</span>)</span>
+<span id="cb10-268"><a href="#cb10-268"></a><span class="in">```{r}</span></span>
+<span id="cb10-269"><a href="#cb10-269"></a><span class="co"># Simple data</span></span>
+<span id="cb10-270"><a href="#cb10-270"></a>activity <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Coding&quot;</span>, <span class="st">&quot;Testing&quot;</span>, <span class="st">&quot;Documentation&quot;</span>, <span class="st">&quot;Meetings&quot;</span>)</span>
+<span id="cb10-271"><a href="#cb10-271"></a>time <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">15</span>)</span>
+<span id="cb10-272"><a href="#cb10-272"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>, <span class="st">&quot;#19424e&quot;</span>)</span>
+<span id="cb10-273"><a href="#cb10-273"></a></span>
+<span id="cb10-274"><a href="#cb10-274"></a><span class="co"># Create pie chart</span></span>
+<span id="cb10-275"><a href="#cb10-275"></a><span class="fu">pie</span>(time, </span>
+<span id="cb10-276"><a href="#cb10-276"></a>    <span class="at">labels =</span> <span class="fu">paste</span>(activity, <span class="st">&quot;(&quot;</span>, time, <span class="st">&quot;%)&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>), </span>
+<span id="cb10-277"><a href="#cb10-277"></a>    <span class="at">col =</span> colors,</span>
+<span id="cb10-278"><a href="#cb10-278"></a>    <span class="at">main =</span> <span class="st">&quot;Time Allocation&quot;</span>,</span>
+<span id="cb10-279"><a href="#cb10-279"></a>    <span class="at">clockwise =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-280"><a href="#cb10-280"></a><span class="in">```</span></span>
+<span id="cb10-281"><a href="#cb10-281"></a></span>
+<span id="cb10-282"><a href="#cb10-282"></a>:::</span>
+<span id="cb10-283"><a href="#cb10-283"></a></span>
+<span id="cb10-284"><a href="#cb10-284"></a><span class="fu">## More Base R Variations</span></span>
+<span id="cb10-285"><a href="#cb10-285"></a></span>
+<span id="cb10-286"><a href="#cb10-286"></a>::: {.panel-tabset .theme-ccbr-gradient}</span>
+<span id="cb10-287"><a href="#cb10-287"></a></span>
+<span id="cb10-288"><a href="#cb10-288"></a><span class="fu">## Line + Points</span></span>
 <span id="cb10-289"><a href="#cb10-289"></a></span>
-<span id="cb10-290"><a href="#cb10-290"></a><span class="co"># Stacked barplot</span></span>
-<span id="cb10-291"><a href="#cb10-291"></a><span class="fu">barplot</span>(data_matrix, </span>
-<span id="cb10-292"><a href="#cb10-292"></a>        <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>),</span>
-<span id="cb10-293"><a href="#cb10-293"></a>        <span class="at">main =</span> <span class="st">&quot;Stacked Bar Chart&quot;</span>,</span>
-<span id="cb10-294"><a href="#cb10-294"></a>        <span class="at">xlab =</span> <span class="st">&quot;Groups&quot;</span>,</span>
-<span id="cb10-295"><a href="#cb10-295"></a>        <span class="at">ylab =</span> <span class="st">&quot;Values&quot;</span>,</span>
-<span id="cb10-296"><a href="#cb10-296"></a>        <span class="at">legend.text =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb10-297"><a href="#cb10-297"></a><span class="in">```</span></span>
-<span id="cb10-298"><a href="#cb10-298"></a></span>
-<span id="cb10-299"><a href="#cb10-299"></a><span class="fu">## Multi Pie</span></span>
-<span id="cb10-300"><a href="#cb10-300"></a></span>
-<span id="cb10-303"><a href="#cb10-303"></a><span class="in">```{r}</span></span>
-<span id="cb10-304"><a href="#cb10-304"></a><span class="co"># Split plotting area for multiple pies</span></span>
-<span id="cb10-305"><a href="#cb10-305"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
-<span id="cb10-306"><a href="#cb10-306"></a></span>
-<span id="cb10-307"><a href="#cb10-307"></a><span class="co"># First pie</span></span>
-<span id="cb10-308"><a href="#cb10-308"></a>pie1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">70</span>)</span>
-<span id="cb10-309"><a href="#cb10-309"></a><span class="fu">pie</span>(pie1, </span>
-<span id="cb10-310"><a href="#cb10-310"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>), </span>
-<span id="cb10-311"><a href="#cb10-311"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>),</span>
-<span id="cb10-312"><a href="#cb10-312"></a>    <span class="at">main =</span> <span class="st">&quot;Survey A&quot;</span>)</span>
-<span id="cb10-313"><a href="#cb10-313"></a></span>
-<span id="cb10-314"><a href="#cb10-314"></a><span class="co"># Second pie  </span></span>
-<span id="cb10-315"><a href="#cb10-315"></a>pie2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">55</span>)</span>
-<span id="cb10-316"><a href="#cb10-316"></a><span class="fu">pie</span>(pie2, </span>
-<span id="cb10-317"><a href="#cb10-317"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Pass&quot;</span>, <span class="st">&quot;Fail&quot;</span>), </span>
-<span id="cb10-318"><a href="#cb10-318"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#296b7f&quot;</span>),</span>
-<span id="cb10-319"><a href="#cb10-319"></a>    <span class="at">main =</span> <span class="st">&quot;Survey B&quot;</span>)</span>
-<span id="cb10-320"><a href="#cb10-320"></a><span class="in">```</span></span>
+<span id="cb10-292"><a href="#cb10-292"></a><span class="in">```{r}</span></span>
+<span id="cb10-293"><a href="#cb10-293"></a><span class="co"># Time series style data</span></span>
+<span id="cb10-294"><a href="#cb10-294"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
+<span id="cb10-295"><a href="#cb10-295"></a>time <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb10-296"><a href="#cb10-296"></a>values <span class="ot">&lt;-</span> <span class="fu">cumsum</span>(<span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
+<span id="cb10-297"><a href="#cb10-297"></a></span>
+<span id="cb10-298"><a href="#cb10-298"></a><span class="co"># Line plot with points</span></span>
+<span id="cb10-299"><a href="#cb10-299"></a><span class="fu">plot</span>(time, values, </span>
+<span id="cb10-300"><a href="#cb10-300"></a>     <span class="at">type =</span> <span class="st">&quot;b&quot;</span>,</span>
+<span id="cb10-301"><a href="#cb10-301"></a>     <span class="at">pch =</span> <span class="dv">16</span>,</span>
+<span id="cb10-302"><a href="#cb10-302"></a>     <span class="at">col =</span> <span class="st">&quot;#296b7f&quot;</span>,</span>
+<span id="cb10-303"><a href="#cb10-303"></a>     <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb10-304"><a href="#cb10-304"></a>     <span class="at">main =</span> <span class="st">&quot;Trend Over Time&quot;</span>,</span>
+<span id="cb10-305"><a href="#cb10-305"></a>     <span class="at">xlab =</span> <span class="st">&quot;Time Point&quot;</span>,</span>
+<span id="cb10-306"><a href="#cb10-306"></a>     <span class="at">ylab =</span> <span class="st">&quot;Cumulative Value&quot;</span>)</span>
+<span id="cb10-307"><a href="#cb10-307"></a><span class="in">```</span></span>
+<span id="cb10-308"><a href="#cb10-308"></a></span>
+<span id="cb10-309"><a href="#cb10-309"></a><span class="fu">## Stacked Bar</span></span>
+<span id="cb10-310"><a href="#cb10-310"></a></span>
+<span id="cb10-313"><a href="#cb10-313"></a><span class="in">```{r}</span></span>
+<span id="cb10-314"><a href="#cb10-314"></a><span class="co"># Matrix for stacked bars</span></span>
+<span id="cb10-315"><a href="#cb10-315"></a>data_matrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">8</span>, <span class="dv">15</span>, </span>
+<span id="cb10-316"><a href="#cb10-316"></a>                       <span class="dv">18</span>, <span class="dv">12</span>, <span class="dv">10</span>, </span>
+<span id="cb10-317"><a href="#cb10-317"></a>                       <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">20</span>), </span>
+<span id="cb10-318"><a href="#cb10-318"></a>                     <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-319"><a href="#cb10-319"></a><span class="fu">colnames</span>(data_matrix) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Group A&quot;</span>, <span class="st">&quot;Group B&quot;</span>, <span class="st">&quot;Group C&quot;</span>)</span>
+<span id="cb10-320"><a href="#cb10-320"></a><span class="fu">rownames</span>(data_matrix) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Category 1&quot;</span>, <span class="st">&quot;Category 2&quot;</span>, <span class="st">&quot;Category 3&quot;</span>)</span>
 <span id="cb10-321"><a href="#cb10-321"></a></span>
-<span id="cb10-322"><a href="#cb10-322"></a>:::</span>
-<span id="cb10-323"><a href="#cb10-323"></a></span>
-<span id="cb10-324"><a href="#cb10-324"></a><span class="fu">#### Back to Top button</span></span>
-<span id="cb10-325"><a href="#cb10-325"></a></span>
-<span id="cb10-326"><a href="#cb10-326"></a>::: {style=&quot;text-align: center; margin: 2em 0;&quot;}</span>
-<span id="cb10-327"><a href="#cb10-327"></a><span class="co">[</span><span class="ot">Back to Top</span><span class="co">](#)</span>{.btn-outline-light}</span>
-<span id="cb10-328"><a href="#cb10-328"></a>:::</span>
-<span id="cb10-329"><a href="#cb10-329"></a></span>
-<span id="cb10-330"><a href="#cb10-330"></a><span class="fu">#### Footer</span></span>
-<span id="cb10-331"><a href="#cb10-331"></a></span>
-<span id="cb10-332"><a href="#cb10-332"></a>::: {.ccbr-footer}</span>
-<span id="cb10-333"><a href="#cb10-333"></a>Created by **Samarth Mathur, PhD** • NIH/NCI/CCR/CCBR</span>
-<span id="cb10-334"><a href="#cb10-334"></a></span>
-<span id="cb10-335"><a href="#cb10-335"></a><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/samarth8392)</span>{.btn-outline-github .btn-sm}</span>
-<span id="cb10-336"><a href="#cb10-336"></a><span class="co">[</span><span class="ot">Documentation</span><span class="co">](https://samarth8392.github.io/ccbr-themes)</span>{.btn-outline-docs .btn-sm}</span>
-<span id="cb10-337"><a href="#cb10-337"></a><span class="co">[</span><span class="ot">Email</span><span class="co">](mailto:samarth.mathur@nih.gov)</span>{.btn-outline-email .btn-sm}</span>
-<span id="cb10-338"><a href="#cb10-338"></a><span class="co">[</span><span class="ot">CCBR</span><span class="co">](https://samarth8392.github.io/ccbr-themes)</span>{.btn-outline-sitemap .btn-sm}</span>
-<span id="cb10-339"><a href="#cb10-339"></a>:::</span>
+<span id="cb10-322"><a href="#cb10-322"></a><span class="co"># Stacked barplot</span></span>
+<span id="cb10-323"><a href="#cb10-323"></a><span class="fu">barplot</span>(data_matrix, </span>
+<span id="cb10-324"><a href="#cb10-324"></a>        <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>),</span>
+<span id="cb10-325"><a href="#cb10-325"></a>        <span class="at">main =</span> <span class="st">&quot;Stacked Bar Chart&quot;</span>,</span>
+<span id="cb10-326"><a href="#cb10-326"></a>        <span class="at">xlab =</span> <span class="st">&quot;Groups&quot;</span>,</span>
+<span id="cb10-327"><a href="#cb10-327"></a>        <span class="at">ylab =</span> <span class="st">&quot;Values&quot;</span>,</span>
+<span id="cb10-328"><a href="#cb10-328"></a>        <span class="at">legend.text =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-329"><a href="#cb10-329"></a><span class="in">```</span></span>
+<span id="cb10-330"><a href="#cb10-330"></a></span>
+<span id="cb10-331"><a href="#cb10-331"></a><span class="fu">## Multi Pie</span></span>
+<span id="cb10-332"><a href="#cb10-332"></a></span>
+<span id="cb10-335"><a href="#cb10-335"></a><span class="in">```{r}</span></span>
+<span id="cb10-336"><a href="#cb10-336"></a><span class="co"># Split plotting area for multiple pies</span></span>
+<span id="cb10-337"><a href="#cb10-337"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb10-338"><a href="#cb10-338"></a></span>
+<span id="cb10-339"><a href="#cb10-339"></a><span class="co"># First pie</span></span>
+<span id="cb10-340"><a href="#cb10-340"></a>pie1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">70</span>)</span>
+<span id="cb10-341"><a href="#cb10-341"></a><span class="fu">pie</span>(pie1, </span>
+<span id="cb10-342"><a href="#cb10-342"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>), </span>
+<span id="cb10-343"><a href="#cb10-343"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#7cc349&quot;</span>, <span class="st">&quot;#ecba4c&quot;</span>),</span>
+<span id="cb10-344"><a href="#cb10-344"></a>    <span class="at">main =</span> <span class="st">&quot;Survey A&quot;</span>)</span>
+<span id="cb10-345"><a href="#cb10-345"></a></span>
+<span id="cb10-346"><a href="#cb10-346"></a><span class="co"># Second pie  </span></span>
+<span id="cb10-347"><a href="#cb10-347"></a>pie2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">45</span>, <span class="dv">55</span>)</span>
+<span id="cb10-348"><a href="#cb10-348"></a><span class="fu">pie</span>(pie2, </span>
+<span id="cb10-349"><a href="#cb10-349"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">&quot;Pass&quot;</span>, <span class="st">&quot;Fail&quot;</span>), </span>
+<span id="cb10-350"><a href="#cb10-350"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#4e9db5&quot;</span>, <span class="st">&quot;#296b7f&quot;</span>),</span>
+<span id="cb10-351"><a href="#cb10-351"></a>    <span class="at">main =</span> <span class="st">&quot;Survey B&quot;</span>)</span>
+<span id="cb10-352"><a href="#cb10-352"></a><span class="in">```</span></span>
+<span id="cb10-353"><a href="#cb10-353"></a></span>
+<span id="cb10-354"><a href="#cb10-354"></a>:::</span>
+<span id="cb10-355"><a href="#cb10-355"></a></span>
+<span id="cb10-356"><a href="#cb10-356"></a><span class="fu">#### Back to Top button</span></span>
+<span id="cb10-357"><a href="#cb10-357"></a></span>
+<span id="cb10-358"><a href="#cb10-358"></a>::: {style=&quot;text-align: center; margin: 2em 0;&quot;}</span>
+<span id="cb10-359"><a href="#cb10-359"></a><span class="co">[</span><span class="ot">Back to Top</span><span class="co">](#)</span>{.btn-outline-light}</span>
+<span id="cb10-360"><a href="#cb10-360"></a>:::</span>
+<span id="cb10-361"><a href="#cb10-361"></a></span>
+<span id="cb10-362"><a href="#cb10-362"></a><span class="fu">#### Footer</span></span>
+<span id="cb10-363"><a href="#cb10-363"></a></span>
+<span id="cb10-364"><a href="#cb10-364"></a>::: {.ccbr-footer}</span>
+<span id="cb10-365"><a href="#cb10-365"></a>Created by **Samarth Mathur, PhD** • NIH/NCI/CCR/CCBR</span>
+<span id="cb10-366"><a href="#cb10-366"></a></span>
+<span id="cb10-367"><a href="#cb10-367"></a><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/samarth8392)</span>{.btn-outline-github .btn-sm}</span>
+<span id="cb10-368"><a href="#cb10-368"></a><span class="co">[</span><span class="ot">Documentation</span><span class="co">](https://samarth8392.github.io/ccbr-themes)</span>{.btn-outline-docs .btn-sm}</span>
+<span id="cb10-369"><a href="#cb10-369"></a><span class="co">[</span><span class="ot">Email</span><span class="co">](mailto:samarth.mathur@nih.gov)</span>{.btn-outline-email .btn-sm}</span>
+<span id="cb10-370"><a href="#cb10-370"></a><span class="co">[</span><span class="ot">CCBR</span><span class="co">](https://samarth8392.github.io/ccbr-themes)</span>{.btn-outline-sitemap .btn-sm}</span>
+<span id="cb10-371"><a href="#cb10-371"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

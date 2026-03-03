@@ -121,6 +121,38 @@ cat('<span class="last-modified">📝 Last modified:', format(Sys.Date(), "%m-%d
 [pastel](link-url){.btn-outline-pastel}
 [mint](link-url){.btn-outline-mint}
 
+# Callout notes
+
+::: {#note1 .callout-important}
+## Important
+
+This is an important note
+:::
+
+::: {#note2 .callout-tip}
+## Tip
+
+This is a tip note
+:::
+
+::: {#note3 .callout-warning}
+## Warning
+
+This is a warning note
+:::
+
+::: {#note4 .callout-note}
+## Note
+
+This is a simple note
+:::
+
+::: {#note5 .callout-caution}
+## Caution
+
+This is a caution note
+:::
+
 # Data Visualization (in Tabs) Examples
 
 ::: {.panel-tabset .theme-ccbr-poppy}

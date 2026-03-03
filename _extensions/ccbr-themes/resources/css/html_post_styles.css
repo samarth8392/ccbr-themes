@@ -218,6 +218,54 @@ a:hover {
   color: var(--teal-dark);
   text-decoration: underline;
 }
+/* Shared callout typography - body */
+.callout-note .callout-body-container.callout-body p,
+.callout-tip .callout-body-container.callout-body p,
+.callout-warning .callout-body-container.callout-body p,
+.callout-caution .callout-body-container.callout-body p,
+.callout-important .callout-body-container.callout-body p {
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+}
+
+.callout-note .callout-header,
+.callout-tip .callout-header,
+.callout-warning .callout-header,
+.callout-caution .callout-header,
+.callout-important .callout-header {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+}
+
+/* Note - Blue */
+.callout-note {
+  border-left: 4px solid #7aaad7 !important;
+  background-color: rgba(154, 183, 210, 0.1) !important;
+}
+
+/* Tip - Green */
+.callout-tip {
+  border-left: 4px solid #5aab5a !important;
+  background-color: rgba(123, 168, 123, 0.1) !important;
+}
+
+/* Warning - Yellow */
+.callout-warning {
+  border-left: 4px solid #d4a017 !important;
+  background-color: rgba(250, 232, 173, 0.1) !important;
+}
+
+/* Caution - Orange */
+.callout-caution {
+  border-left: 4px solid #e07b39 !important;
+  background-color: rgba(205, 171, 149, 0.1) !important;
+}
+
+/* Important - Red */
+.callout-important {
+  border-left: 4px solid #d95f5f !important;
+  background-color: rgba(211, 146, 146, 0.1) !important;
+}
 
 /* CCBR Footer styling - Light theme (footer only) */
 .ccbr-footer {
