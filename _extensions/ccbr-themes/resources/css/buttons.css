@@ -221,6 +221,23 @@
   font-size: 1.2em;
 }
 
+/* Excel */
+.btn-excel::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f1c3";
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.btn-outline-excel::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f1c3";
+  font-weight: 900;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
 /* PDF */
 .btn-pdf::before {
   font-family: "Font Awesome 6 Free";
@@ -591,6 +608,34 @@
   background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+/* Excel Button */
+.btn-excel {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #217346 0%, #1b5e20 100%);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(33, 115, 70, 0.3);
+  margin: 8px 4px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-excel:hover {
+  background: linear-gradient(135deg, #1b5e20 0%, #154a19 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 115, 70, 0.4);
   color: white;
   text-decoration: none;
 }
@@ -988,6 +1033,34 @@
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3);
+  text-decoration: none;
+}
+
+/* Excel Outline */
+.btn-outline-excel {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #217346;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 8px 4px;
+  border: 2px solid #217346;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-excel:hover {
+  background: #217346;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 115, 70, 0.3);
   text-decoration: none;
 }
 
